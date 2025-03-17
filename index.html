@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IRPF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculadora de IRPF</h1>
+    <label for="salario">Salário Mensal (R$):</label>
+    <input type="number" id="salario" placeholder="Digite seu salário">
+    <button onclick="calcularIRPF()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+
+    <div id="resultado">
+      <p>Valor do IRPF a recolher: <span id="irpf"></span></p>
+      <p>Alíquota efetiva: <span id="aliquota"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
